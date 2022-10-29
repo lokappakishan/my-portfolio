@@ -7,11 +7,12 @@ import { projects } from '../../constants/constants';
 const Projects = () => (
   <Section nopadding id='projects'>
     <SectionDivider />
+    <br />
       <SectionTitle>Projects</SectionTitle>
       <GridContainer>
         {projects.map(({title,description,image,tags,source,visit,id})=>{
           return(
-            <BlogCard id={id}>
+            <BlogCard key={id}>
               <Img src={image} />
               <TitleContent>
                 <HeaderThree title>{title}</HeaderThree>
@@ -22,7 +23,7 @@ const Projects = () => (
                 <TitleContent>Stack</TitleContent>
                 <TagList>
                   {tags.map((tag,i)=>{
-                    return <Tag id={i}>{tag}</Tag>
+                    return <Tag key={i}>{tag}</Tag>
                   })}
                 </TagList>
               </div>

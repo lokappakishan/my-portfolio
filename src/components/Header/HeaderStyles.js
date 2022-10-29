@@ -1,13 +1,28 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
+
+export const HeaderWrapper = styled.section`
+	/* width: calc(100vw - 96px);
+  max-width: 1040px;
+  padding: 2rem 48px 40px;
+  margin: 1rem auto;
+  box-sizing: content-box; */
+
+
+  @media ${props => props.theme.breakpoints.sm} {
+    /* padding: 0 16px 48px;
+    width: calc(100vw - 32px); */
+  }
+`
+
 export const Container = styled.div`
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem;
+  padding-top: 2rem; */
 
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
