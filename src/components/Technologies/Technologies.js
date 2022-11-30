@@ -4,12 +4,11 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 
 const Technologies = () =>  (
- <Section id="tech">
+ <Section id="tech" >
     <SectionDivider divider />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I've worked with a range a technologies in the web development world from Frontend to Backend.
     </SectionText>
     <List>
       <ListItem>
@@ -19,7 +18,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
+            Experiece in <br />
             React.js
           </ListParagraph>
         </ListContainer>
@@ -31,7 +30,7 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
+            Experience in <br />
             Java and Databases
           </ListParagraph>
         </ListContainer>
@@ -43,13 +42,13 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>UI/UX</ListTitle>
           <ListParagraph>
-            Experience with <br />
+            Experience in <br />
             tools like Adobe XD
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
+    <SectionDivider colorAlt style={{marginTop: '10rem'}}/>
   </Section>
 );
 

@@ -32,10 +32,12 @@ export const BlogCard = styled.div`
   }
 `;
 export const TitleContent = styled.div`
+  font-weight: bold;
+  color: #9cc9e3;
   text-align: center;
   z-index: 20;
   width: 100%;
-
+  padding: 2rem;
 `;
 
 
@@ -68,7 +70,8 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  margin: 2em 0;
+  padding: 0 1.5em;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
@@ -85,7 +88,7 @@ export const UtilityList = styled.ul`
   padding: 0;
   display: flex;
   justify-content: space-around;
-  margin: 2.5rem 0;
+  margin-bottom: 3rem;
 `;
 
 export const ExternalLinks = styled.a`

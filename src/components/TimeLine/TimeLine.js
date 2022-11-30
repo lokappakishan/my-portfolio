@@ -45,8 +45,8 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-      The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
+      <SectionText style={{marginBottom:'5rem'}}>
+      I am a courteous and professional software developer with a desire to create long term solutions to challenging technical problems and companies, clients, and consumers. I know several aspects of web development, landing pages, optimization, SEO, and analytics. I am effective at reading system use cases, mockups, and other development documents to ensure requirements are met.
       </SectionText>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
@@ -98,7 +98,7 @@ const Timeline = () => {
           ))}
         </>
       </CarouselContainer>
-      <CarouselButtons>
+      <CarouselButtons >
         {TimeLineData.map((item, index) => {
           return (
             <CarouselButton

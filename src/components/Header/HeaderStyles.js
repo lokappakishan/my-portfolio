@@ -1,29 +1,13 @@
 import { IoIosArrowDropdown } from 'react-icons/io';
 import styled from 'styled-components';
 
-
-export const HeaderWrapper = styled.section`
-	/* width: calc(100vw - 96px);
-  max-width: 1040px;
-  padding: 2rem 48px 40px;
-  margin: 1rem auto;
-  box-sizing: content-box; */
-
-
-  @media ${props => props.theme.breakpoints.sm} {
-    /* padding: 0 16px 48px;
-    width: calc(100vw - 32px); */
-  }
-`
-
 export const Container = styled.div`
-  /* display: grid;
+  display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 2rem;
   padding: 1rem;
-  padding-top: 2rem; */
-
+  padding-top: 2rem;
   @media ${(props) => props.theme.breakpoints.sm} {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -33,9 +17,6 @@ export const Container = styled.div`
   }
 `;
 
-export const Span = styled.span`
-    font-size: 2rem;
-`;
 
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -53,6 +34,8 @@ export const Div2 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
+
+
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
@@ -88,19 +71,16 @@ export const ContactDropDown = styled.button`
   position: relative;
   background: none;
   font-size: 1.7rem;
-
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   cursor: pointer;
   transition: 0.3s ease;
-
   &:focus {
     outline: none;
   }
   &:hover {
     color: #fff;
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     padding: 0.4rem 0;
   }
@@ -116,15 +96,14 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
   transition: 0.3s ease;
   opacity: ${({ isOpen }) => (isOpen ? '1' : '.75')};
   transform: ${({ isOpen }) => (isOpen ? 'scaleY(-1)' : 'scaleY(1)')};
-
   &:hover {
     opacity: 1;
   }
-
   @media ${(props) => props.theme.breakpoints.sm} {
     margin: 2px 0 0 2px;
     width: 15px;
   }
+  
 `;
 
 
@@ -141,4 +120,8 @@ border-radius: 50px;
     cursor: pointer;
     
   }
+`
+
+export const Li = styled.li`
+  margin-top: 0.5rem;
 `
