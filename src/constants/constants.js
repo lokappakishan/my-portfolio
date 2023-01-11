@@ -1,12 +1,21 @@
 export const projects = [
   {
+    title: 'My Portfolio',
+    description: "The portfolio project is built to list some projects and give a brief idea about the skillsets i bring . The webpage's components are built using React for UI components, NextJs to make application make production ready, and SCSS components for styling",
+      image: '/images/portfolio.png',
+      tags: ['React', 'NextJs','SCSS'],
+    source: 'https://github.com/lokappakishan/my-portfolio',
+    visit: 'https://lokappakishan.eu/',
+    id: 0,
+  },
+  {
     title: 'Living the Social Life',
     description: "This is a blog about the exploration of minimalism in life. It is built using HTML and CSS while keeping responsive design in mind to accommodate all types of screens.",
       image: '/images/LiveAlgo.png',
       tags: ['HTML', 'CSS', 'Javascript'],
     source: 'https://github.com/lokappakishan/simple-life',
     visit: 'https://lokappakishan.github.io/simple-life/index.html',
-    id: 0,
+    id: 1,
   },
   {
     title: 'Fylo Dark Theme Landing Page',
@@ -15,15 +24,6 @@ export const projects = [
       tags: ['HTML', 'CSS', 'Javascript'],
     source: 'https://github.com/lokappakishan/flyo-landing-page',
     visit: 'https://lokappakishan.github.io/flyo-landing-page/',
-    id: 1,
-  },
-  {
-    title: 'My Portfolio',
-    description: "The portfolio project is built to list some projects and give a brief idea about the skillsets i bring . The webpage's components are built using React for UI components, NextJs to make application make production ready, and SCSS components for styling",
-      image: '/images/portfolio.png',
-      tags: ['React', 'NextJs','SCSS'],
-    source: 'https://github.com/lokappakishan/my-portfolio',
-    visit: 'https://lokappakishan.eu/',
     id: 2,
   },
   {
@@ -37,6 +37,7 @@ export const projects = [
   },
 ];
 
+
 export const TimeLineData = [
   { year: 2016, text: 'Started my career as Software Engineer', },
   { year: 2019, text: 'Pursued Master in Software technology at HFT stuttgart', },
@@ -44,3 +45,4 @@ export const TimeLineData = [
   { year: 2021, text: 'Master thesis student at DigiLab4U', },
   { year: 2022, text: 'Graduated from HFT stuttgart', },
 ];
+
